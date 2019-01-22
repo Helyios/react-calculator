@@ -1,0 +1,66 @@
+// FONT
+@import url("https://fonts.googleapis.com/css?family=Montserrat");
+
+body,
+html {
+  font-family: "Montserrat";
+}
+
+.calculator {
+  display: block;
+  margin: auto;
+  width: 400px;
+  height: 700px;
+}
+
+.calc-display {
+  width: calc(100%-20px);
+  text-align: right;
+  height: 50px;
+  background-color: #565656;
+  line-height: 50px;
+  color: white;
+  padding: 10px;
+  font-size: 30px;
+}
+
+button {
+  display: inline-block;
+  width: calc(100% / 4);
+  cursor: pointer;
+  padding: 10px;
+  font-size: 18px;
+  color: white;
+  border-top: 1px solid #666;
+  border-right: 1px solid #777;
+  box-shadow: 0px;
+  -moz-box-shadow: 0px;
+  -webkit-box-shadow: 0px;
+  &:focus {
+    outline: none;
+  }
+}
+
+.digit-keys {
+  background-color: darkgrey;
+  &:active {
+    background-color: darken($color: darkgrey, $amount: 10);
+  }
+}
+.fn-keys {
+  background-color: grey;
+  &:active {
+    background-color: darken($color: grey, $amount: 10);
+  }
+}
+
+.op-keys {
+  background-color: orange;
+  &:active {
+    background-color: darken($color: orange, $amount: 10);
+  }
+}
+
+.key-0 {
+  width: calc(100% / 2);
+}
